@@ -499,7 +499,7 @@ PRODUCT_PACKAGES += \
 
 # Vendor libstdc++
 PRODUCT_PACKAGES += \
-    libstdc++.vendor
+    libstdc++_vendor
 
 # Vendor service manager
 PRODUCT_PACKAGES += \
