@@ -42,7 +42,7 @@ service tad /vendor/bin/tad /dev/block/bootdevice/by-name/TA 0,16
     class trimarea
     seclabel u:r:tad:s0
 
-on charger
+on property:init.svc.vendor.charger=running
     # Charger
     chmod 0664 /sys/class/battchg_ext/usb_input_suspend
     chmod 0664 /sys/class/battchg_ext/lrc_charge_disable
