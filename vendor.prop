@@ -129,7 +129,6 @@ bluetooth.profile.ccp.server.enabled?=true
 bluetooth.profile.vcp.controller.enabled?=true
 persist.bluetooth.a2dp_offload.disabled=false
 persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac
-persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac
 persist.vendor.bt.aac_frm_ctl.enabled=true
 persist.vendor.bt.aac_vbr_frm_ctl.enabled=true
 vendor.qcom.bluetooth.soc=hastings
@@ -140,7 +139,6 @@ ro.vendor.bt.bdaddr_path=/data/vendor/etc/bluetooth_bdaddr
 
 # Camera
 vendor.camera.enable.uvc=true
-vendor.mm.enable.qcom_parser=16777215
 
 # Chipset
 ro.soc.manufacturer=QTI
@@ -192,7 +190,6 @@ debug.sf.high_fps_late_sf_phase_offset_ns=-2000000
 ro.surface_flinger.set_idle_timer_ms=4000
 ro.surface_flinger.set_touch_timer_ms=4000
 debug.sf.latch_unsignaled=1
-persist.demo.hdmirotationlock=false
 persist.vendor.colorgamut.current.mode=1
 persist.sys.sf.color_saturation=1.0
 persist.sys.sf.color_mode=9
@@ -233,9 +230,6 @@ persist.vendor.radio.procedure_bytes=SKIP
 persist.vendor.radio.rat_on=combine
 persist.vendor.radio.oem_socket=true
 persist.vendor.radio.enableadvancedscan=true
-rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
-ril.subscription.types=NV,RUIM
-ro.com.android.dataroaming=true
 
 # Sensors
 persist.vendor.sensors.sync_request=true
