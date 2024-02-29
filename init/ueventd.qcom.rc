@@ -352,7 +352,7 @@ subsystem mem_buf_vm
 /dev/p73                   0660   secure_element secure_element
 
 # eSE permissions
-/dev/stsafe320_gpio       0660   system     system
+/dev/st54spi_gpio         0660   system     system
 
 # UIO devices
 /dev/uio0                 0660   system     system
