@@ -26,6 +26,9 @@
 # OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
+# Changes from Qualcomm Innovation Center, Inc. are provided under the following license:
+# Copyright (c) 2024 Qualcomm Innovation Center, Inc. All rights reserved.
+# SPDX-License-Identifier: BSD-3-Clause-Clear
 
 #
 # start qcrild only for targets on which radio is present
@@ -36,29 +39,17 @@ low_ram=`getprop ro.config.low_ram`
 
 case "$baseband" in
     "msm" | "csfb" | "svlte2a" | "mdm" | "mdm2" | "sglte" | "sglte2" | "dsda2" | "unknown" | "dsda3" | "sdm" | "sdx" | "sm6")
-
-    start vendor.qcrild
-
-    multisim=`getprop persist.radio.multisim.config`
-
-    if [ "$multisim" = "dsds" ] || [ "$multisim" = "dsda" ]; then
-          start vendor.qcrild2
-    elif [ "$multisim" = "tsts" ]; then
-          start vendor.qcrild2
-          start vendor.qcrild3
-    fi
-
     case "$datamode" in
         "tethered")
             start vendor.dataqti
             if [ "$low_ram" != "true" ]; then
-              start vendor.dataadpl
+                start vendor.dataadpl
             fi
             ;;
         "concurrent")
             start vendor.dataqti
             if [ "$low_ram" != "true" ]; then
-              start vendor.dataadpl
+                start vendor.dataadpl
             fi
             ;;
         *)
