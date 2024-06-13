@@ -27,9 +27,8 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 $(call inherit-product, vendor/sony/sm8350-common/sm8350-common-vendor.mk)
 
 # VNDK
-BOARD_API_LEVEL := 30
-BOARD_SHIPPING_API_LEVEL := $(BOARD_API_LEVEL)
-PRODUCT_SHIPPING_API_LEVEL := $(BOARD_API_LEVEL)
+BOARD_SHIPPING_API_LEVEL := 30
+PRODUCT_SHIPPING_API_LEVEL := $(BOARD_SHIPPING_API_LEVEL)
 
 PRODUCT_COPY_FILES += \
     prebuilts/vndk/v32/arm64/arch-arm-armv8-a/shared/vndk-sp/libutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libutils-v32.so \
