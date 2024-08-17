@@ -261,7 +261,7 @@ $(call soong_config_set,lineage_powershare,powershare_path,/sys/class/qcom-batte
 
 # QTI fwk-detect
 PRODUCT_PACKAGES += \
-    libvndfwk_detect_jni.qti.vendor # Needed by CNE app
+    libvndfwk_detect_jni.qti_vendor # Needed by CNE app
 
 # Sensors
 PRODUCT_PACKAGES += \
