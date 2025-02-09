@@ -27,7 +27,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_ven
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
 # Include common vendor stuff
-$(call inherit-product, vendor/sony/sm8350-common/sm8350-common-vendor.mk)
+$(call inherit-product, vendor/sony/sm8450-common/sm8450-common-vendor.mk)
 
 # VNDK
 BOARD_SHIPPING_API_LEVEL := 30
@@ -50,11 +50,11 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
     CarrierConfigResCommon \
-    SonySagamiFrameworksResCommon \
-    SonySagamiSettingsProviderOverlayCommon \
-    SonySagamiSettingsResCommon \
-    SonySagamiSystemUIResCommon \
-    SonySagamiTelephonyResCommon \
+    SonyNagaraFrameworksResCommon \
+    SonyNagaraSettingsProviderOverlayCommon \
+    SonyNagaraSettingsResCommon \
+    SonyNagaraSystemUIResCommon \
+    SonyNagaraTelephonyResCommon \
     WifiResCommon
 
 # Permissions
@@ -179,7 +179,7 @@ PRODUCT_PACKAGES += \
     libvisualizer \
     libvolumelistener
 
-AUDIO_HAL_DIR := hardware/qcom-caf/sm8350/audio
+AUDIO_HAL_DIR := hardware/qcom-caf/sm8450/audio
 
 # Audio Policies
 PRODUCT_COPY_FILES += \

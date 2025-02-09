@@ -23,7 +23,7 @@ BUILD_BROKEN_INCORRECT_PARTITION_IMAGES := true
 
 BOARD_VENDOR := sony
 
-COMMON_PATH := device/sony/sm8350-common
+COMMON_PATH := device/sony/sm8450-common
 
 # A/B
 AB_OTA_UPDATER := true
@@ -54,7 +54,7 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a76
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := lahaina
+TARGET_BOOTLOADER_BOARD_NAME := taro
 TARGET_NO_BOOTLOADER := true
 
 # Kernel
@@ -266,4 +266,4 @@ WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
--include vendor/sony/sm8350-common/BoardConfigVendor.mk
+-include vendor/sony/sm8450-common/BoardConfigVendor.mk
