@@ -26,9 +26,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_ven
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
-# Include common vendor stuff
-$(call inherit-product, vendor/sony/sm8450-common/sm8450-common-vendor.mk)
-
 # VNDK
 BOARD_SHIPPING_API_LEVEL := 30
 PRODUCT_SHIPPING_API_LEVEL := $(BOARD_SHIPPING_API_LEVEL)
@@ -572,3 +569,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
+# Include common vendor stuff
+$(call inherit-product, vendor/sony/sm8450-common/sm8450-common-vendor.mk)
