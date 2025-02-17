@@ -4,7 +4,15 @@
     "target_path": "hardware/sony"
   },
   {
-    "repository": "android_kernel_sony_sm8450",
+    "repository": "android_kernel_sony_sm8550",
     "target_path": "kernel/sony/sm8450"
+  },
+  {
+    "repository": "android_kernel_sony_sm8550-devicetrees",
+    "target_path": "kernel/sony/sm8450-devicetrees"
+  },
+  {
+    "repository": "android_kernel_sony_sm8550-modules",
+    "target_path": "kernel/sony/sm8450-modules"
   }
 ]
