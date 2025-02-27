@@ -60,7 +60,7 @@ TARGET_BOOTLOADER_BOARD_NAME := taro
 TARGET_NO_BOOTLOADER := true
 
 # Kernel
-BOARD_BOOT_HEADER_VERSION := 3
+BOARD_BOOT_HEADER_VERSION := 4
 BOARD_KERNEL_CMDLINE := \
     console=ttyMSM0,115200n8 \
     androidboot.hardware=qcom \
