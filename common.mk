@@ -218,6 +218,10 @@ PRODUCT_PACKAGES += \
     libyuv.vendor \
     vendor.qti.hardware.camera.postproc@1.0.vendor
 
+# ConfigStore
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.capabilityconfigstore@1.0.vendor
+
 # Common init scripts
 PRODUCT_PACKAGES += \
     init.class_main.sh \

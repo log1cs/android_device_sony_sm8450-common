@@ -309,12 +309,6 @@ vendor/lib64/com.qti.settings.sm8450.so
 # Charger
 vendor/etc/charger_fw_fstab.qti
 
-# Configstore
-vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service
-vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc
-vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
-vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
-
 # Connection Security
 
 # Data
