@@ -69,14 +69,6 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl">
-        <name>vendor.egistec.hardware.fingerprint</name>
-        <version>4.0</version>
-        <interface>
-            <name>IBiometricsFingerprintRbs</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
     <hal format="hidl" optional="true">
         <name>vendor.semc.hardware.charger</name>
         <version>1.0</version>
