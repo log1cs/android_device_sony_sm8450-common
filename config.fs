@@ -31,6 +31,9 @@ value:2987
 [AID_VENDOR_TRIMAREA]
 value:2993
 
+[AID_VENDOR_CHARGER]
+value:2995
+
 [AID_VENDOR_SECUREDATAMGR_CLIENT]
 value:2996
 
@@ -70,6 +73,12 @@ caps: 0
 [persist/]
 mode: 0771
 user: AID_SYSTEM
+group: AID_SYSTEM
+caps: 0
+
+[product/etc/default-permissions/pre_grant_permissions_oem.xml]
+mode: 0640
+user: AID_ROOT
 group: AID_SYSTEM
 caps: 0
 
@@ -252,4 +261,3 @@ mode: 0771
 user: AID_SYSTEM
 group: AID_SYSTEM
 caps: 0
-
