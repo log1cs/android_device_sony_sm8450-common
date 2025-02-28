@@ -377,6 +377,10 @@ PRODUCT_PACKAGES += \
     android.hardware.power@1.2.vendor \
     vendor.qti.hardware.perf@2.2.vendor
 
+# PowerShare
+PRODUCT_PACKAGES += \
+    vendor.lineage.powershare@1.0-service.default
+
 # QMI
 PRODUCT_PACKAGES += \
     libcurl.vendor \
