@@ -69,10 +69,14 @@ BOARD_BOOTCONFIG := \
     androidboot.usbcontroller=a600000.dwc3
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
-BOARD_USES_GENERIC_KERNEL_IMAGE := true
 BOARD_KERNEL_IMAGE_NAME := Image
+BOARD_USES_GENERIC_KERNEL_IMAGE := true
+BOARD_USES_QCOM_MERGE_DTBS_SCRIPT := true
+TARGET_NEEDS_DTBOIMAGE := true
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_NO_GCC := true
+TARGET_KERNEL_SOURCE := kernel/sony/sm8450
+TARGET_KERNEL_CONFIG := gki_defconfig vendor/waipio_GKI.config vendor/sony/nagara.config
 
 # Kernel modules
 BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMON_PATH)/modules.load.vendor_dlkm))
