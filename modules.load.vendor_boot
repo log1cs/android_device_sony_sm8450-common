@@ -1,4 +1,3 @@
-adsp_loader_dlkm.ko
 adsp_sleepmon.ko
 altmode-glink.ko
 arm_smmu.ko
@@ -80,7 +79,6 @@ goodix_core.ko
 gpi.ko
 gplaf_scmi.ko
 gplaf_vendor.ko
-gpr_dlkm.ko
 gpucc-diwali.ko
 gpucc-waipio.ko
 guestvm_loader.ko
@@ -127,9 +125,7 @@ mhi_dev_uci.ko
 microdump_collector.ko
 minidump.ko
 msm-geni-se.ko
-msm-mmrm.ko
 msm_dma_iommu_mapping.ko
-msm_drm.ko
 msm_ext_display.ko
 msm_geni_serial.ko
 msm_kgsl.ko
@@ -183,8 +179,6 @@ pmu_vendor.ko
 policy_engine.ko
 proxy-consumer.ko
 pwm-qti-lpg.ko
-q6_notifier_dlkm.ko
-q6_pdr_dlkm.ko
 qbt_handler.ko
 qce50.ko
 qcedev-mod.ko
@@ -275,7 +269,6 @@ rtc-pm8xxx.ko
 sched-walt.ko
 sdhci-msm.ko
 sdpm_clk.ko
-sec_touchscreen.ko
 secure_buffer.ko
 sensors_ssc.ko
 sg.ko
@@ -291,11 +284,9 @@ smsc.ko
 smsc75xx.ko
 smsc95xx.ko
 snd-usb-audio-qmi.ko
-snd_event_dlkm.ko
 soc_sleep_stats.ko
 socinfo.ko
 spcom.ko
-spf_core_dlkm.ko
 spi-msm-geni.ko
 spmi-glink-debug.ko
 spmi-pmic-arb-debug.ko
