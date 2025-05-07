@@ -141,6 +141,7 @@ vendor.gralloc.enable_logs=0
 
 # DPM
 persist.vendor.dpm.idletimer.mode=default
+persist.vendor.dpm.vndr.feature=11
 persist.vendor.dpmhalservice.enable=1
 
 # DRM
