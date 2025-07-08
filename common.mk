@@ -315,6 +315,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.thermal-service.qti
 
+# Touch
+PRODUCT_PACKAGES += \
+    vendor.lineage.touch-service.sony
+
 # Update engine
 PRODUCT_PACKAGES += \
     update_engine \
