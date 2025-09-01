@@ -86,7 +86,8 @@ BOARD_RAMDISK_USE_LZ4 := true
 TARGET_KERNEL_CONFIG := \
     gki_defconfig \
     vendor/waipio_GKI.config \
-    vendor/sony/nagara.config
+    vendor/sony/nagara.config \
+    vendor/debugfs.config
 TARGET_KERNEL_SOURCE := kernel/sony/sm8450
 TARGET_KERNEL_NO_GCC := true
 TARGET_NEEDS_DTBOIMAGE := true
