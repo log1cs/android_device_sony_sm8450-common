@@ -28,19 +28,6 @@ cnss_plat_ipc_qmi_svc.ko
 cnss_prealloc.ko
 cnss_utils.ko
 core_hang_detect.ko
-coresight-csr.ko
-coresight-cti.ko
-coresight-dummy.ko
-coresight-funnel.ko
-coresight-hwevent.ko
-coresight-remote-etm.ko
-coresight-replicator.ko
-coresight-stm.ko
-coresight-tgu.ko
-coresight-tmc.ko
-coresight-tpda.ko
-coresight-tpdm.ko
-coresight.ko
 cpu_hotplug.ko
 cpu_voltage_cooling.ko
 cqhci.ko
@@ -91,7 +78,6 @@ hyp_core_ctl.ko
 i2c-msm-geni.ko
 i3c-master-msm-geni.ko
 icc-bcm-voter.ko
-icc-debug.ko
 icc-rpmh.ko
 icnss2.ko
 iommu-logger.ko
@@ -139,8 +125,6 @@ msm_show_epoch.ko
 msm_show_resume_irq.ko
 msm_sysstats.ko
 nfc_i2c.ko
-nt36xxx-i2c.ko
-nt36xxx-spi.ko
 nvmem_qcom-spmi-sdam.ko
 nvmem_qfprom.ko
 panel_event_notifier.ko
@@ -184,7 +168,6 @@ q6_pdr_dlkm.ko
 qbt_handler.ko
 qce50.ko
 qcedev-mod.ko
-qcom-cpufreq-hw-debug.ko
 qcom-cpufreq-hw.ko
 qcom-dcvs.ko
 qcom-dload-mode.ko
@@ -247,7 +230,6 @@ qti-adc-tm.ko
 qti-fixed-regulator.ko
 qti_amoled_ecm.ko
 qti_battery_charger_main.ko
-qti_battery_debug.ko
 qti_cpufreq_cdev.ko
 qti_devfreq_cdev.ko
 qti_qmi_cdev.ko
@@ -288,8 +270,6 @@ socinfo.ko
 spcom.ko
 spf_core_dlkm.ko
 spi-msm-geni.ko
-spmi-glink-debug.ko
-spmi-pmic-arb-debug.ko
 spmi-pmic-arb.ko
 sps_drv.ko
 spss_utils.ko
