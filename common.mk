@@ -251,6 +251,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti
 
+$(call soong_config_set,qtipower,mode_ext_lib,//$(LOCAL_PATH):libpowermode-ext-sony)
+
 # PowerShare
 PRODUCT_PACKAGES += \
     vendor.lineage.powershare-service.default
