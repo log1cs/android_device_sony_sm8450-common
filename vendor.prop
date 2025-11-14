@@ -189,6 +189,9 @@ ro.surface_flinger.wcg_composition_dataspace=143261696
 # Incremental FS
 ro.incremental.enable=1
 
+# Lights
+ro.hardware.lights=sony
+
 # Media
 debug.stagefright.c2inputsurface=-1
 
