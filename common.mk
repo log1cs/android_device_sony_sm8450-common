@@ -241,6 +241,7 @@ PRODUCT_PACKAGES += \
     FrameworkRes-Nagara-Overlay \
     FrameworksRes-Esim-Capabilities-Rel15-Overlay \
     FrameworksResCommon_Sys \
+    NcmTetheringOverlay \
     ServiceWifiRes-Nagara-Overlay \
     SettingsResCommon_Sys \
     SystemUIResCommon_Sys \
