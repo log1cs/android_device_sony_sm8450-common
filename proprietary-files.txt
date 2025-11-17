@@ -763,6 +763,7 @@ system_ext/framework/com.android.hotwordenrollment.common.util.jar
 
 # IDD
 vendor/bin/hw/vendor.semc.system.idd@1.1-service
+vendor/bin/idd-logreader
 vendor/bin/iddd
 vendor/etc/idd.fstab
 vendor/etc/iddd_user.conf
