@@ -112,3 +112,7 @@ service tad /vendor/bin/tad /dev/block/bootdevice/by-name/TA 0,16
     group oem_2997 root
     socket tad stream 0660 system oem_2993
     disabled
+
+# zRAM
+on property:sys.boot_completed=1
+     swapon_all /vendor/etc/fstab.zram
