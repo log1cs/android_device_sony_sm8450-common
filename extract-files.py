@@ -68,6 +68,11 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace('<M4Enable>0</M4Enable>', '<M4Enable>1</M4Enable>')
         .regex_replace('<UIBCValid>0</UIBCValid>', '<UIBCValid>1</UIBCValid>')
         .regex_replace('<USB>1</USB>', '<USB>3</USB>'),
+    'vendor/lib64/libiVptApi.so': blob_fixup()
+        .add_needed('libiVptLibC.so'),
+    'vendor/lib64/libiVptLibC.so': blob_fixup()
+        .add_needed('libcrypto.so')
+        .add_needed('libiVptHkiDec.so'),
 }  # fmt: skip
 
 

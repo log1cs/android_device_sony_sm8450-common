@@ -82,13 +82,34 @@ system_ext/lib64/com.qualcomm.qti.ant@1.0.so
 vendor/etc/models/acd/event.eai
 vendor/etc/models/acd/music.eai
 vendor/etc/models/acd/speech.eai
+vendor/lib64/hw/audio.primary.taro.so
+vendor/lib64/lib360raspeakervirtualizer.so
+vendor/lib64/lib360raupmix.so
+vendor/lib64/lib360ravirtualizer.so
+vendor/lib64/libXtcApi.so
 vendor/lib64/libadm.so
+vendor/lib64/libar-pal.so
 vendor/lib64/libaudio_log_utils.so
 vendor/lib64/libeai_fixed.so
 vendor/lib64/libeai_float.so
+vendor/lib64/libiVptApi.so
+vendor/lib64/libiVptHkiDec.so
+vendor/lib64/libiVptLibC.so
 vendor/lib64/liblistensoundmodel2vendor.so
 vendor/lib64/libmcs.so
 vendor/lib64/libqtigefar.so
+vendor/lib64/libsonydseehxwrapper.so
+vendor/lib64/libupmix-lib.so
+vendor/lib64/vendor.qti.hardware.pal@1.0-impl.so
+
+# Audio configurations
+vendor/etc/audio/sku_taro/mixer_paths_waipio_qrd.xml
+vendor/etc/audio/sku_taro/resourcemanager_upd.xml
+vendor/etc/audio/sku_taro/resourcemanager_waipio_qrd.xml
+vendor/etc/audio_policy_volumes.xml
+vendor/etc/default_volume_tables.xml
+vendor/etc/microphone_characteristics.xml
+vendor/etc/usecaseKvManager.xml
 
 # Audio FX modules
 vendor/lib64/libaudiokeymgr.so
