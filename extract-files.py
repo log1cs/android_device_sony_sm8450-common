@@ -71,6 +71,8 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libbase_shim.so'),
     'vendor/bin/thermal-engine-v2': blob_fixup()
         .binary_regex_replace(b'oem/etc/thermal-engine.conf', b'odm/etc/thermal-engine.conf'),
+    'vendor/etc/init/vendor.sensors.sscrpcd.rc': blob_fixup()
+        .regex_replace('class early_hal', 'class core'),
     'vendor/etc/seccomp_policy/c2audio.vendor.ext-arm64.policy': blob_fixup()
         .add_line_if_missing('setsockopt: 1'),
     'vendor/etc/seccomp_policy/sensors-qesdk.policy': blob_fixup()
