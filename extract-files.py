@@ -77,6 +77,8 @@ blob_fixups: blob_fixups_user_type = {
         .add_line_if_missing('setsockopt: 1'),
     'vendor/etc/seccomp_policy/sensors-qesdk.policy': blob_fixup()
         .add_line_if_missing('gettid: 1'),
+    'vendor/etc/sensors/hals.conf': blob_fixup()
+        .add_line_if_missing('sensors.dynamic_sensor_hal.so'),
     'vendor/etc/msm_irqbalance.conf': blob_fixup()
         .regex_replace('IGNORED_IRQ=27,23,38$', 'IGNORED_IRQ=27,23,38,115,332'),
     ('vendor/etc/media_codecs_taro.xml', 'vendor/etc/media_codecs_taro_vendor.xml'): blob_fixup()
