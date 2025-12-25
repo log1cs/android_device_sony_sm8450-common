@@ -185,6 +185,8 @@ PRODUCT_PACKAGES += \
     init.qcom.rc \
     init.qcom.recovery.rc \
     init.qcom.sh \
+    init.qti.kernel.rc \
+    init.qti.kernel.sh \
     init.sony.rc \
     init.target.rc \
     ueventd.qcom.rc

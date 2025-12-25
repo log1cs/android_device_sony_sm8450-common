@@ -899,9 +899,7 @@ vendor/etc/msm_irqbalance.conf
 vendor/bin/init.kernel.post_boot-taro.sh
 vendor/bin/init.kernel.post_boot.sh
 vendor/bin/init.qcom.class_core.sh
-vendor/bin/init.qti.kernel.sh
 vendor/bin/vendor_modprobe.sh
-vendor/etc/init/hw/init.qti.kernel.rc
 
 # Input
 system/usr/keylayout/gpio-keys.kl:vendor/usr/keylayout/gpio-keys.kl
