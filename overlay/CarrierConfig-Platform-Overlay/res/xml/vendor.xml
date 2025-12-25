@@ -131,7 +131,7 @@
         <boolean name="show_wfc_location_privacy_policy_bool" value="true" />
         <boolean name="show_blocking_pay_phone_option_bool" value="true" />
         <boolean name="use_wfc_home_network_mode_in_roaming_network_bool" value="true" />
-        <string name="gps.nfw_proxy_apps">com.sonymobile.gps.locationattribution</string>
+        <string name="gps.nfw_proxy_apps">com.google.android.carrierlocation</string>
         <boolean name="show_wifi_calling_icon_in_status_bar_bool" value="true" />
         <boolean name="show_single_operator_row_in_choose_network_setting_bool" value="false" />
         <string name="smart_forwarding_config_component_name_string">com.android.settings/.sim.smartForwarding.SmartForwardingActivity</string>
