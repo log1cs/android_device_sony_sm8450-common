@@ -75,8 +75,6 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace('class early_hal', 'class core'),
     'vendor/etc/seccomp_policy/c2audio.vendor.ext-arm64.policy': blob_fixup()
         .add_line_if_missing('setsockopt: 1'),
-    'vendor/etc/seccomp_policy/sensors-qesdk.policy': blob_fixup()
-        .add_line_if_missing('gettid: 1'),
     'vendor/etc/sensors/hals.conf': blob_fixup()
         .add_line_if_missing('sensors.dynamic_sensor_hal.so'),
     'vendor/etc/msm_irqbalance.conf': blob_fixup()
