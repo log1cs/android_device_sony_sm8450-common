@@ -120,7 +120,6 @@ vendor/lib64/librebuffering.so
 vendor/lib64/libznr.so
 vendor/lib64/soundfx/libasphere.so
 vendor/lib64/soundfx/libdnnrwrapper.so
-vendor/lib64/soundfx/libshoebox.so
 vendor/lib64/soundfx/libznrwrapper.so
 
 # Bluetooth
