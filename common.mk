@@ -203,6 +203,7 @@ PRODUCT_PACKAGES += \
     fstab.zram \
     init.class_main.sh \
     init.qcom.early_boot.sh \
+    init.qcom.msim.sh \
     init.qcom.rc \
     init.qcom.recovery.rc \
     init.qcom.sh \

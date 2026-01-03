@@ -18,6 +18,8 @@ on early-boot
 
 on early-init
     exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules/ sec_touchscreen bu520x1nvx et603-int
+    wait /dev/block/by-name/LTALabel
+    exec_start msim_sh
 
 on init
     wait /dev/block/bootdevice/by-name/TA
@@ -113,6 +115,62 @@ service tad /vendor/bin/tad /dev/block/bootdevice/by-name/TA 0,16
     socket tad stream 0660 system oem_2993
     disabled
 
+service msim_sh /odm/bin/init.qcom.msim.sh
+    user root
+    group root
+    oneshot
+
 # zRAM
 on property:sys.boot_completed=1
      swapon_all /vendor/etc/fstab.zram
+
+# LTALabel
+on property:vendor.radio.ltalabel.model=XQ-CT72
+    setprop ro.vendor.product.rf.id PDX223-C2
+
+on property:vendor.radio.ltalabel.model=XQ-CT62
+    setprop ro.vendor.product.rf.id PDX223-A2US
+
+on property:vendor.radio.ltalabel.model=XQ-CT54
+    setprop ro.vendor.product.rf.id PDX223-A4
+
+on property:vendor.radio.ltalabel.model=XQ-CT44
+    setprop ro.vendor.product.rf.id PDX223-J4
+    setprop persist.vendor.nfc.config_file_name "libnfc-nxp-typef.conf"
+
+on property:vendor.radio.ltalabel.model=A201SO
+    setprop ro.vendor.product.rf.id PDX223-J4
+    setprop persist.vendor.nfc.config_file_name "libnfc-nxp-typef.conf"
+
+on property:vendor.radio.ltalabel.model=SOG06
+    setprop ro.vendor.product.rf.id PDX223-J4
+    setprop persist.vendor.nfc.config_file_name "libnfc-nxp-typef.conf"
+
+on property:vendor.radio.ltalabel.model=SO-51C
+    setprop ro.vendor.product.rf.id PDX223-J4
+    setprop persist.vendor.nfc.config_file_name "libnfc-nxp-typef.conf"
+
+on property:vendor.radio.ltalabel.model=XQ-CQ72
+    setprop ro.vendor.product.rf.id PDX224-C2
+
+on property:vendor.radio.ltalabel.model=XQ-CQ62
+    setprop ro.vendor.product.rf.id PDX224-A2US
+
+on property:vendor.radio.ltalabel.model=XQ-CQ54
+    setprop ro.vendor.product.rf.id PDX224-A4
+
+on property:vendor.radio.ltalabel.model=XQ-CQ44
+    setprop ro.vendor.product.rf.id PDX224-J4
+    setprop persist.vendor.nfc.config_file_name "libnfc-nxp-typef.conf"
+
+on property:vendor.radio.ltalabel.model=A204SO
+    setprop ro.vendor.product.rf.id PDX224-J4
+    setprop persist.vendor.nfc.config_file_name "libnfc-nxp-typef.conf"
+
+on property:vendor.radio.ltalabel.model=SOG09
+    setprop ro.vendor.product.rf.id PDX224-J4
+    setprop persist.vendor.nfc.config_file_name "libnfc-nxp-typef.conf"
+
+on property:vendor.radio.ltalabel.model=SO-54C
+    setprop ro.vendor.product.rf.id PDX224-J4
+    setprop persist.vendor.nfc.config_file_name "libnfc-nxp-typef.conf"
