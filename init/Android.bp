@@ -70,6 +70,12 @@ sh_binary {
 }
 
 sh_binary {
+    name: "init.qcom.msim.sh",
+    src: "init.qcom.msim.sh",
+    device_specific: true,
+}
+
+sh_binary {
     name: "init.qcom.sh",
     src: "init.qcom.sh",
     soc_specific: true,
