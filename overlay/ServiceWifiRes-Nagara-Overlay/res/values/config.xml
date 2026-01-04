@@ -142,6 +142,12 @@
          success). -->
     <bool name="config_wifiDriverSupportedNl80211RegChangedEvent" translatable="false">true</bool>
 
+    <!-- Boolean indicating whether to disable firmware roaming when the device goes into idle mode.
+         true: firmware roaming will be disabled when the device goes into idle mode and screen
+               is off, and then re-activated when the device exits idle mode or screen is on.
+         false: firmware roaming will not be affected. -->
+    <bool translatable="false" name="config_wifiDisableFirmwareRoamingInIdleMode">true</bool>
+
     <!-- Whether to show a confirmation dialog to the user if a third party app targeting below SDK
          level Q tries to enable Wi-Fi -->
     <bool name="config_showConfirmationDialogForThirdPartyAppsEnablingWifi" translatable="false">true</bool>
