@@ -248,7 +248,7 @@ caps: BLOCK_SUSPEND
 mode: 0755
 user: AID_GPS
 group: AID_GPS
-caps: NET_BIND_SERVICE WAKE_ALARM BLOCK_SUSPEND
+caps: 0
 
 [vendor/firmware_mnt/image/*]
 mode: 0771
