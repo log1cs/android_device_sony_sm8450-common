@@ -172,6 +172,9 @@ ro.surface_flinger.wcg_composition_dataspace=143261696
 # Incremental FS
 ro.incremental.enable=1
 
+# Keystore
+ro.hardware.keystore_desede=true
+
 # Lights
 ro.hardware.lights=sony
 
