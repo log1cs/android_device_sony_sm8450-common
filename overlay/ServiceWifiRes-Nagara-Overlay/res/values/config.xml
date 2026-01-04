@@ -121,6 +121,9 @@
     <!-- Indicate the prefix of wifi p2p device name, the length should be between 1 ~ 28. -->
     <string name="config_wifiP2pDeviceNamePrefix" translatable="false">Xperia_</string>
 
+    <!-- Enable WPA2 to WPA3 auto-upgrade offload to capable Driver/Firmware -->
+    <bool translatable="false" name="config_wifiSaeUpgradeOffloadEnabled">true</bool>
+
     <!-- Enable Make-Before-Break Wifi network switching.
          Note: this is conditional on the device supporting dual concurrent STAs. -->
     <bool name="config_wifiMultiStaNetworkSwitchingMakeBeforeBreakEnabled" translatable="false">true</bool>
