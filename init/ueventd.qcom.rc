@@ -571,3 +571,7 @@ subsystem mem_buf_vm
 
 # IPA Events
 /dev/ipa_events         0660   radio      radio
+
+# Smart_charging
+/sys/class/battchg_ext smart_charging_activation   0664 system system
+/sys/class/battchg_ext smart_charging_interruption 0664 system system
