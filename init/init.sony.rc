@@ -26,6 +26,7 @@ on init
     start tad
 
 on boot
+    wait /sys/class/battchg_ext/smart_charging_activation
     write /sys/class/battchg_ext/smart_charging_activation 1
     chown system system /sys/class/battchg_ext/smart_charging_interruption
 
