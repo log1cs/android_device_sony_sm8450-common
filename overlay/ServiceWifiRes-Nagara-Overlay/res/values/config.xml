@@ -3,7 +3,7 @@
      SPDX-FileCopyrightText: The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<resources>
     <!-- boolean indicating whether the WiFi chipset has 5GHz band support.
          Note: This config is replacing the config_wifi_dual_band_support
          since more bands may now be supported (such as 6GHz), the naming dual_band
@@ -23,6 +23,8 @@
          radio is unable to find any MCC information to infer wifi country code from -->
     <bool name="config_wifi_revert_country_code_on_cellular_loss" translatable="false">true</bool>
 
+    <!-- Integer parameters of the wifi to cellular handover feature
+         wifi should not stick to bad networks -->
     <!-- Integer threshold for low network score, should be somewhat less than the entry threshhold -->
     <integer name="config_wifi_framework_wifi_score_bad_rssi_threshold_5GHz" translatable="false">-81</integer>
 
@@ -94,10 +96,25 @@
     <!-- Do a single scan when cell data loss is detected. -->
     <bool name="config_wifiScanOnCellularDataLossEnabled" translatable="false">true</bool>
 
+    <!-- Enable WPA2 to WPA3 auto-upgrade offload to capable Driver/Firmware -->
+    <bool translatable="false" name="config_wifiSaeUpgradeOffloadEnabled">true</bool>
+
     <!-- Interval Multiplier for PNO scan. After not finding any networks for
          config_wifiPnoScanIterations, PNO will multiply the scan interval by the value
          configured.-->
     <integer name="config_wifiPnoScanIntervalMultiplier" translatable="false">15</integer>
+
+    <!-- Enable Make-Before-Break Wifi network switching.
+         Note: this is conditional on the device supporting dual concurrent STAs. -->
+    <bool name="config_wifiMultiStaNetworkSwitchingMakeBeforeBreakEnabled" translatable="false">true</bool>
+
+    <!-- Enable concurrent peer to peer + internet connectivity
+         Note: this is conditional on the device supporting dual concurrent STAs. -->
+    <bool name="config_wifiMultiStaLocalOnlyConcurrencyEnabled" translatable="false">true</bool>
+
+    <!-- Enable concurrent restricted connectivity + internet connectivity
+         Note: this is conditional on the device supporting dual concurrent STAs. -->
+    <bool name="config_wifiMultiStaRestrictedConcurrencyEnabled">true</bool>
 
     <!-- Carrier specific override for the disable threshold -->
     <string-array name="config_wifiDisableReasonAuthenticationFailureCarrierSpecificThreshold_carrier_overrides" translatable="false">
@@ -121,21 +138,6 @@
     <!-- Indicate the prefix of wifi p2p device name, the length should be between 1 ~ 28. -->
     <string name="config_wifiP2pDeviceNamePrefix" translatable="false">Xperia_</string>
 
-    <!-- Enable WPA2 to WPA3 auto-upgrade offload to capable Driver/Firmware -->
-    <bool translatable="false" name="config_wifiSaeUpgradeOffloadEnabled">true</bool>
-
-    <!-- Enable Make-Before-Break Wifi network switching.
-         Note: this is conditional on the device supporting dual concurrent STAs. -->
-    <bool name="config_wifiMultiStaNetworkSwitchingMakeBeforeBreakEnabled" translatable="false">true</bool>
-
-    <!-- Enable concurrent peer to peer + internet connectivity
-         Note: this is conditional on the device supporting dual concurrent STAs. -->
-    <bool name="config_wifiMultiStaLocalOnlyConcurrencyEnabled" translatable="false">true</bool>
-
-    <!-- Enable concurrent restricted connectivity + internet connectivity
-         Note: this is conditional on the device supporting dual concurrent STAs. -->
-    <bool name="config_wifiMultiStaRestrictedConcurrencyEnabled">true</bool>
-
     <!-- Indicates whether or not the WLAN driver supports the NL80211_CMD_REG_CHANGE or
          NL80211_CMD_WIPHY_REG_CHANGE events which indicate the current country code which is
          being used by the WLAN driver. If the driver doesn't support these events
@@ -145,13 +147,13 @@
          success). -->
     <bool name="config_wifiDriverSupportedNl80211RegChangedEvent" translatable="false">true</bool>
 
+    <!-- Whether to show a confirmation dialog to the user if a third party app targeting below SDK
+         level Q tries to enable Wi-Fi -->
+    <bool name="config_showConfirmationDialogForThirdPartyAppsEnablingWifi" translatable="false">true</bool>
+
     <!-- Boolean indicating whether to disable firmware roaming when the device goes into idle mode.
          true: firmware roaming will be disabled when the device goes into idle mode and screen
                is off, and then re-activated when the device exits idle mode or screen is on.
          false: firmware roaming will not be affected. -->
     <bool translatable="false" name="config_wifiDisableFirmwareRoamingInIdleMode">true</bool>
-
-    <!-- Whether to show a confirmation dialog to the user if a third party app targeting below SDK
-         level Q tries to enable Wi-Fi -->
-    <bool name="config_showConfirmationDialogForThirdPartyAppsEnablingWifi" translatable="false">true</bool>
 </resources>
