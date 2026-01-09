@@ -74,7 +74,6 @@ icc-rpmh.ko
 icnss2.ko
 iommu-logger.ko
 ipa_fmwk.ko
-kryo_arm64_edac.ko
 leds-qpnp-vibrator-ldo.ko
 leds-qti-flash.ko
 leds-qti-tri-led.ko
@@ -90,7 +89,6 @@ mem-hooks.ko
 mem_buf.ko
 mem_buf_dev.ko
 memlat.ko
-memory_dump_v2.ko
 mhi.ko
 mhi_cntrl_qcom.ko
 mhi_dev_drv.ko
@@ -99,7 +97,6 @@ mhi_dev_net.ko
 mhi_dev_netdev.ko
 mhi_dev_uci.ko
 microdump_collector.ko
-minidump.ko
 msm-geni-se.ko
 msm_dma_iommu_mapping.ko
 msm_ext_display.ko
@@ -165,7 +162,6 @@ qcom-vadc-common.ko
 qcom_aoss.ko
 qcom_cpu_vendor_hooks.ko
 qcom_dma_heaps.ko
-qcom_edac.ko
 qcom_esoc.ko
 qcom_gic_intr_routing.ko
 qcom_glink.ko
