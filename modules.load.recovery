@@ -44,7 +44,6 @@ dwc3-msm.ko
 ehset.ko
 ep_pcie_drv.ko
 eud.ko
-focaltech_fts.ko
 frpc-adsprpc.ko
 gcc-diwali.ko
 gcc-waipio.ko
@@ -60,7 +59,6 @@ gh_virt_wdt.ko
 gh_virtio_backend.ko
 glink_pkt.ko
 glink_probe.ko
-goodix_core.ko
 gpi.ko
 gplaf_scmi.ko
 gplaf_vendor.ko
