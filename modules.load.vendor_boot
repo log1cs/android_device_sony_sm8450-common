@@ -130,7 +130,6 @@ phy-qcom-ufs-qmp-14nm.ko
 phy-qcom-ufs-qmp-v3.ko
 phy-qcom-ufs-qmp-v4-waipio.ko
 phy-qcom-ufs.ko
-pinctrl-cape.ko
 pinctrl-msm.ko
 pinctrl-somc-pmic.ko
 pinctrl-somc.ko
