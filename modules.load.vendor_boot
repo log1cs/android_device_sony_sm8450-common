@@ -131,7 +131,6 @@ phy-qcom-ufs-qmp-v3.ko
 phy-qcom-ufs-qmp-v4-anarok.ko
 phy-qcom-ufs-qmp-v4-cape.ko
 phy-qcom-ufs-qmp-v4-lahaina.ko
-phy-qcom-ufs-qmp-v4-parrot.ko
 phy-qcom-ufs-qmp-v4-waipio.ko
 phy-qcom-ufs.ko
 pinctrl-cape.ko
@@ -200,7 +199,6 @@ qcom_wdt_core.ko
 qdss_bridge.ko
 qfprom-sys.ko
 qmi_helpers.ko
-qnoc-parrot.ko
 qnoc-qos.ko
 qnoc-waipio.ko
 qpnp-amoled-regulator.ko
