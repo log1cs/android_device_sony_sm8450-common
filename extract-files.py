@@ -70,8 +70,8 @@ blob_fixups: blob_fixups_user_type = {
         .add_line_if_missing('sensors.dynamic_sensor_hal.so'),
     'vendor/etc/msm_irqbalance.conf': blob_fixup()
         .regex_replace('IGNORED_IRQ=27,23,38$', 'IGNORED_IRQ=27,23,38,115,332'),
-    ('vendor/etc/media_codecs_taro.xml', 'vendor/etc/media_codecs_taro_vendor.xml'): blob_fixup()
-        .regex_replace('.*media_codecs_(google_audio|google_c2|google_telephony|dolby_audio|sony_c2_audio|vendor_audio).*\n', ''),
+    'vendor/etc/media_codecs_taro.xml': blob_fixup()
+        .regex_replace('.*media_codecs_(c2_audio|google_audio|google_c2|google_telephony|dolby_audio|sony_c2_audio|vendor_audio).*\n', ''),
     'vendor/etc/wfdconfig.xml': blob_fixup()
         .regex_replace('<M4Enable>0</M4Enable>', '<M4Enable>1</M4Enable>')
         .regex_replace('<UIBCValid>0</UIBCValid>', '<UIBCValid>1</UIBCValid>')

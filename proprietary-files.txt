@@ -884,7 +884,6 @@ vendor/bin/init.qti.media.sh
 vendor/etc/init/init.qti.media.rc
 vendor/etc/init/vendor.qti.media.c2@1.0-service.rc
 vendor/etc/init/vendor.qti.media.c2audio@1.0-service.rc
-vendor/etc/media_codecs_c2_audio.xml
 vendor/etc/media_codecs_taro_vendor.xml:vendor/etc/media_codecs_taro.xml
 vendor/etc/media_codecs_performance_taro_vendor.xml:vendor/etc/media_codecs_performance_taro.xml
 vendor/etc/media_profiles.xml
