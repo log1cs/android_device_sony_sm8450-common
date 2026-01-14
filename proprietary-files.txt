@@ -1194,10 +1194,6 @@ vendor/lib64/vendor.qti.hardware.qseecom@1.0.so
 vendor/bin/rmt_storage
 vendor/etc/init/vendor.qti.rmt_storage.rc
 
-# SSR
-vendor/bin/ssr_setup
-vendor/bin/subsystem_ramdump
-
 # Secd
 vendor/bin/hw/vendor.semc.hardware.secd@1.1-service
 vendor/etc/init/init.taqmi.rc
