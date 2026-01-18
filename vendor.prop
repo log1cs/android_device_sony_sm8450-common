@@ -175,9 +175,6 @@ ro.incremental.enable=1
 # Keystore
 ro.hardware.keystore_desede=true
 
-# Lights
-ro.hardware.lights=sony
-
 # Media
 debug.stagefright.c2inputsurface=-1
 
