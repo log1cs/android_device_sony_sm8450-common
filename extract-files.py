@@ -80,6 +80,8 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace('<M4Enable>0</M4Enable>', '<M4Enable>1</M4Enable>')
         .regex_replace('<UIBCValid>0</UIBCValid>', '<UIBCValid>1</UIBCValid>')
         .regex_replace('<USB>1</USB>', '<USB>3</USB>'),
+    ('vendor/lib64/libdpps.so', 'vendor/lib64/libsnapdragoncolor-manager.so'): blob_fixup()
+        .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
     'vendor/lib64/libiVptApi.so': blob_fixup()
         .add_needed('libiVptLibC.so'),
     'vendor/lib64/libiVptLibC.so': blob_fixup()
