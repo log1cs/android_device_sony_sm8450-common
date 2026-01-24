@@ -48,6 +48,8 @@ lib_fixups: lib_fixups_user_type = {
 blob_fixups: blob_fixups_user_type = {
     'vendor/bin/qcc-trd': blob_fixup()
         .replace_needed('libgrpc++_unsecure.so', 'libgrpc++_unsecure_prebuilt.so'),
+    'vendor/bin/hw/android.hardware.vibrator-sony.service.cs40l25': blob_fixup()
+        .replace_needed('android.hardware.vibrator-V1-ndk_platform.so', 'android.hardware.vibrator-V1-ndk.so'),
     ('vendor/bin/hw/android.hardware.security.keymint-service-qti', 'vendor/lib64/libqtikeymint.so'): blob_fixup()
         .replace_needed('android.hardware.security.keymint-V1-ndk_platform.so', 'android.hardware.security.keymint-V1-ndk.so')
         .replace_needed('android.hardware.security.secureclock-V1-ndk_platform.so', 'android.hardware.security.secureclock-V1-ndk.so')
@@ -62,6 +64,8 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libbase_shim.so'),
     'vendor/bin/thermal-engine-v2': blob_fixup()
         .binary_regex_replace(b'oem/etc/thermal-engine.conf', b'odm/etc/thermal-engine.conf'),
+    'vendor/etc/init/android.hardware.vibrator-sony.service.cs40l25.rc': blob_fixup()
+        .regex_replace('/vendor/bin/hw/android.hardware.vibrator-service.cs40l25', '/vendor/bin/hw/android.hardware.vibrator-sony.service.cs40l25'),
     'vendor/etc/init/vendor.sensors.sscrpcd.rc': blob_fixup()
         .regex_replace('class early_hal', 'class core'),
     'vendor/etc/seccomp_policy/c2audio.vendor.ext-arm64.policy': blob_fixup()
