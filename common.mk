@@ -262,7 +262,7 @@ PRODUCT_PACKAGES += \
     CarrierConfig-Platform-Overlay \
     FrameworkRes-Common-Overlay \
     FrameworkRes-Nagara-Overlay \
-    FrameworksRes-Esim-Capabilities-Rel15-Overlay \
+    FrameworksRes-Esim-Overlay \
     FrameworksResCommon_Sys \
     NcmTetheringOverlay \
     ServiceWifiRes-Nagara-Overlay \
