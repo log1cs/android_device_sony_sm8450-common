@@ -1,6 +1,9 @@
 # Vendor
 ro.vendor.qti.va_odm.support=1
 
+# Dolby
+ro.vendor.dolby.dax.version=DAX3_3.7.0.8_r1
+
 # Display
 persist.vendor.display.pcc_matrix=0.000000,0.000000,0.000000,0.000000,0.117647,0.235294
 persist.vendor.colorgamut.mode=1

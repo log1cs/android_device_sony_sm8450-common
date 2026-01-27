@@ -456,6 +456,43 @@ vendor/lib64/libSonyDisplayProperties.so
 vendor/bin/hw/vendor.semc.hardware.display@2.5-service
 vendor/etc/init/vendor.semc.hardware.display@2.5-service.rc
 
+# Dolby
+system_ext/lib64/vendor.dolby.hardware.dms@2.0.so;MODULE_SUFFIX=_system
+vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service
+vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc
+vendor/etc/vintf/manifest/vendor.dolby.hardware.dms.xml
+vendor/lib64/libdapparamstorage.so
+vendor/lib64/libdlbdsservice.so
+vendor/lib64/libdlbpreg.so
+vendor/lib64/liboem_specific.so
+vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so
+vendor/lib64/vendor.dolby.hardware.dms@2.0.so
+
+# Dolby (C2)
+vendor/bin/hw/vendor.dolby.media.c2@1.0-service
+vendor/etc/init/vendor.dolby.media.c2@1.0-service.rc
+vendor/etc/vintf/manifest/vendor.dolby.media.c2@1.0-service.xml
+vendor/lib64/libcodec2_soft_ac4dec.so
+vendor/lib64/libcodec2_soft_ddpdec.so
+vendor/lib64/libcodec2_soft_dolby.so
+vendor/lib64/libcodec2_store_dolby.so
+vendor/lib64/libdeccfg.so
+
+# Dolby (configurations)
+system_ext/etc/permissions/com.dolby.daxservice.xml
+vendor/etc/dolby/dax-default.xml
+vendor/etc/media_codecs_dolby_audio.xml
+
+# Dolby (FX)
+vendor/lib64/soundfx/libdlbvol.so
+vendor/lib64/soundfx/libswdap.so
+vendor/lib64/soundfx/libswgamedap.so
+vendor/lib64/soundfx/libswvqe.so
+
+# Dolby (service)
+system_ext/priv-app/DolbySound/DolbySound.apk;PRESIGNED
+system_ext/priv-app/daxService/daxService.apk;PRESIGNED
+
 # DPM
 system_ext/bin/dpmd
 system_ext/bin/tcmd
@@ -886,8 +923,8 @@ vendor/bin/init.qti.media.sh
 vendor/etc/init/init.qti.media.rc
 vendor/etc/init/vendor.qti.media.c2@1.0-service.rc
 vendor/etc/init/vendor.qti.media.c2audio@1.0-service.rc
-vendor/etc/media_codecs_taro_vendor.xml:vendor/etc/media_codecs_taro.xml;TRYSRCFIRST
 vendor/etc/media_codecs_performance_taro_vendor.xml:vendor/etc/media_codecs_performance_taro.xml;TRYSRCFIRST
+vendor/etc/media_codecs_taro_vendor.xml:vendor/etc/media_codecs_taro.xml;TRYSRCFIRST
 vendor/etc/media_profiles.xml
 vendor/etc/media_profiles_V1_0.xml
 vendor/etc/media_profiles_taro.xml
@@ -1320,6 +1357,22 @@ vendor/lib64/libscveObjectSegmentation.so
 vendor/lib64/libscveObjectSegmentation_stub.so
 vendor/lib64/libscveObjectTracker.so
 vendor/lib64/libscveObjectTracker_stub.so
+
+# Sony external apps
+product/app/CameraAddonPermission/CameraAddonPermission.apk;PRESIGNED
+product/app/CameraCommonPermission/CameraCommonPermission.apk;PRESIGNED
+product/app/SomcCinemaPro-YodoNagara/SomcCinemaPro-YodoNagara.apk;PRESIGNED
+product/app/SomcVideoPro-YodoNagara/SomcVideoPro-YodoNagara.apk;PRESIGNED
+product/priv-app/CameraCommon/CameraCommon.apk;PRESIGNED
+product/priv-app/CameraPanorama-YodoNagara/CameraPanorama-YodoNagara.apk;PRESIGNED
+product/priv-app/ExtMonitorApp/ExtMonitorApp.apk;PRESIGNED
+product/priv-app/SomcPhotoPro-Nagara/SomcPhotoPro-Nagara.apk;PRESIGNED
+product/priv-app/UsbExtOutAudio/UsbExtOutAudio.apk;PRESIGNED
+
+# Sony external apps (permissions)
+product/etc/permissions/com.sonymobile.extmonitorapp.xml
+product/etc/permissions/com.sonymobile.photopro.xml
+product/etc/permissions/jp.co.sony.mc.usbextoutaudio.xml
 
 # Soter
 vendor/bin/hw/vendor.qti.hardware.soter@1.0-service

@@ -406,6 +406,7 @@ PRODUCT_COPY_FILES += \
 
 # VINTF
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
+    device/sony/sm8450-common/device_framework_matrix.xml \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
     hardware/sony/vintf/device_framework_matrix.xml
 DEVICE_FRAMEWORK_MANIFEST_FILE += device/sony/sm8450-common/framework_manifest.xml

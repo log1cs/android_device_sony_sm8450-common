@@ -77,11 +77,15 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/etc/msm_irqbalance.conf': blob_fixup()
         .regex_replace('IGNORED_IRQ=27,23,38$', 'IGNORED_IRQ=27,23,38,115,332'),
     'vendor/etc/media_codecs_taro.xml': blob_fixup()
-        .regex_replace('.*media_codecs_(c2_audio|google_audio|google_c2|google_telephony|dolby_audio|sony_c2_audio|vendor_audio).*\n', ''),
+        .regex_replace('.*media_codecs_(c2_audio|google_audio|google_c2|google_telephony|vendor_audio).*\n', ''),
     'vendor/etc/wfdconfig.xml': blob_fixup()
         .regex_replace('<M4Enable>0</M4Enable>', '<M4Enable>1</M4Enable>')
         .regex_replace('<UIBCValid>0</UIBCValid>', '<UIBCValid>1</UIBCValid>')
         .regex_replace('<USB>1</USB>', '<USB>3</USB>'),
+    ('vendor/lib64/libcodec2_soft_ac4dec.so', 'vendor/lib64libcodec2_soft_ddpdec.so',
+     'vendor/lib64/libcodec2_soft_dolby.so', 'vendor/lib64/libdlbdsservice.so',
+     'vendor/lib64/libdlbpreg.so', 'vendor/lib64/soundfx/libdlbvol.so'): blob_fixup()
+        .replace_needed('libstagefright_foundation.so', 'libstagefright_foundation-v33.so'),
     'vendor/lib64/libiVptApi.so': blob_fixup()
         .add_needed('libiVptLibC.so'),
     'vendor/lib64/libiVptLibC.so': blob_fixup()
