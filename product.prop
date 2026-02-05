@@ -23,3 +23,6 @@ bluetooth.profile.pbap.server.enabled=true
 
 # Camera
 camera.disable_zsl_mode=true
+
+# eBPF
+ro.bpf.kver_override=5.15.136
