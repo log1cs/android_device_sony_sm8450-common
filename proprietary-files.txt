@@ -1321,6 +1321,18 @@ vendor/lib64/libscveObjectSegmentation_stub.so
 vendor/lib64/libscveObjectTracker.so
 vendor/lib64/libscveObjectTracker_stub.so
 
+# Sony external apps
+product/app/CameraAddonPermission/CameraAddonPermission.apk;PRESIGNED
+product/app/CameraCommonPermission/CameraCommonPermission.apk;PRESIGNED
+product/app/SomcCinemaPro-YodoNagara/SomcCinemaPro-YodoNagara.apk;PRESIGNED
+product/app/SomcVideoPro-YodoNagara/SomcVideoPro-YodoNagara.apk;PRESIGNED
+product/priv-app/CameraCommon/CameraCommon.apk;PRESIGNED
+product/priv-app/CameraPanorama-YodoNagara/CameraPanorama-YodoNagara.apk;PRESIGNED
+product/priv-app/SomcPhotoPro-Nagara/SomcPhotoPro-Nagara.apk;PRESIGNED
+
+# Sony external apps (permissions)
+product/etc/permissions/com.sonymobile.photopro.xml
+
 # Soter
 vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
 vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc

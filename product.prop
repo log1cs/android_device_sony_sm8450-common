@@ -23,3 +23,4 @@ bluetooth.profile.pbap.server.enabled=true
 
 # Camera
 camera.disable_zsl_mode=true
+ro.com.google.lens.oem_camera_package=com.sonymobile.photopro
