@@ -19,6 +19,7 @@ from extract_utils.main import (
 
 namespace_imports = [
     'device/sony/sm8450-common',
+    'hardware/qcom-caf/common/libqti-perfd-client',
     'hardware/qcom-caf/sm8450',
     'hardware/qcom-caf/wlan',
     'hardware/sony',
@@ -76,6 +77,8 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace('IGNORED_IRQ=27,23,38$', 'IGNORED_IRQ=27,23,38,115,332'),
     'vendor/etc/media_codecs_taro.xml': blob_fixup()
         .regex_replace('.*media_codecs_(c2_audio|google_audio|google_c2|google_telephony|dolby_audio|sony_c2_audio|vendor_audio).*\n', ''),
+    'vendor/etc/public.libraries.txt': blob_fixup()
+        .regex_replace('libqti-perfd-client.so\n', ''),
     'vendor/etc/wfdconfig.xml': blob_fixup()
         .regex_replace('<M4Enable>0</M4Enable>', '<M4Enable>1</M4Enable>')
         .regex_replace('<UIBCValid>0</UIBCValid>', '<UIBCValid>1</UIBCValid>')
