@@ -110,9 +110,11 @@ service msim_sh /odm/bin/init.qcom.msim.sh
     group root
     oneshot
 
-# zRAM
 on property:sys.boot_completed=1
-     swapon_all /vendor/etc/fstab.zram
+    swapon_all /vendor/etc/fstab.zram
+
+    # Enable PowerHAL hint processing
+    setprop vendor.powerhal.init 1
 
 # LTALabel
 on property:vendor.radio.ltalabel.model=XQ-CT72
