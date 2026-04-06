@@ -138,6 +138,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey
 
+# Extras
+$(call inherit-product, vendor/sony/extras/extras.mk)
+
 # eUICC
 PRODUCT_PACKAGES += \
     SonyEuicc
