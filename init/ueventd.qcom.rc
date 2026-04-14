@@ -575,3 +575,7 @@ subsystem mem_buf_vm
 # Smart_charging
 /sys/class/battchg_ext smart_charging_activation   0664 system system
 /sys/class/battchg_ext smart_charging_interruption 0664 system system
+
+# Torch control
+/sys/devices/platform/soc/c42d000.qcom,spmi/spmi-0/0-02/c42d000.qcom,spmi:qcom,pm8350c@2:qcom,flash_led@ee00/leds/led:switch_0 brightness 0660 cameraserver camera
+/sys/devices/platform/soc/c42d000.qcom,spmi/spmi-0/0-02/c42d000.qcom,spmi:qcom,pm8350c@2:qcom,flash_led@ee00/leds/led:torch_0 brightness 0660 cameraserver camera
