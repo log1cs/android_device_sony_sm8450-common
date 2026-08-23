@@ -80,6 +80,13 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace('<M4Enable>0</M4Enable>', '<M4Enable>1</M4Enable>')
         .regex_replace('<UIBCValid>0</UIBCValid>', '<UIBCValid>1</UIBCValid>')
         .regex_replace('<USB>1</USB>', '<USB>3</USB>'),
+    #   0x32b578: 5f 24 03 d5  bti c
+    #   0x32b57c: 63 ab ff 17  b   <audio_360_is_upmix_supported_pkg_impl>
+    # ---
+    #   0x32b578: 20 00 80 52  mov w0, #1
+    #   0x32b57c: c0 03 5f d6  ret
+    'vendor/lib64/libar-pal.so': blob_fixup()
+        .sig_replace('5f 24 03 d5 63 ab ff 17', '20 00 80 52 c0 03 5f d6'),
     ('vendor/lib64/libdpps.so', 'vendor/lib64/libsnapdragoncolor-manager.so'): blob_fixup()
         .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
     'vendor/lib64/libiVptApi.so': blob_fixup()
